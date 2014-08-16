@@ -1,0 +1,28 @@
+{
+    "name": "onlinepbx-moysklad",
+    "version": "0.0.1",
+    "author": {
+        "name": "Vitaliy Makeev",
+        "email": "w.makeev@gmail.com",
+        "url": "https://github.com/wmakeev"
+    },
+    "description": "Модуль для CRM-адаптера к OnlinePBX",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wmakeev/onlinepbx-moysklad.git"
+    },
+    "keywords": [
+        "onlinepbx",
+        "crm",
+        "moysklad",
+        "warehouse",
+        "erp"
+    ],
+    "dependencies": {
+        "lodash": "^2.4.1",
+        "moysklad-client": "^0.2.3-4"
+    },
+    "devDependencies": {
+        "chai": "^1.9.1"
+    }
+}
