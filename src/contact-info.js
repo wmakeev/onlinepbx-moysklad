@@ -5,33 +5,42 @@
  */
 
 var client = require('moysklad-client').createClient();
+var PNF = require('google-libphonenumber').PhoneNumberFormat;
+var phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance();
+var phoneParser = require('phone-parser');
 
-const companyUrl = 'https://online.moysklad.ru/app/#company/view?id=';
+function getCompanyUrl (companyUuid) {
+  return 'https://online.moysklad.ru/app/#company/view?id=' + companyUuid
+}
 
-var contactInfo = function (data, cb) {
-    if (data && data.phone) {
-        var company = client.from('company')
-            .filter('contact.phones', data.phone)
-            .first(function (err, company) {
-                if (err) {
-                    cb(new Error('Ошибка запроса к серверу МойСклад'));
+module.exports = function contactInfo (data, cb) {
+  if (data && data.phone) {
+    // 9226227755
+    var parsedPhoneNumber = phoneUtil.parse(data.phone, 'RU');
+    // +79226227755
+    var phoneE164 = phoneUtil.format(parsedPhoneNumber, PNF.E164);
+    // +7 (922) 622-77-55
+    var phoneNumber = phoneParser(phoneE164, '+x (xxx) xxx-xx-xx');
 
-                } else {
-                    if (company) {
-                        cb(null, {
-                            "company" : {
-                                "id"    : company.uuid,
-                                "url"   : companyUrl + company.uuid,
-                                "title" : company.name,
-                                "email" : company.contact ? company.contact.email : null
-                            }
-                        })
-                    } else {
-                        cb(new Error('Контрагент по номеру ' + data.phone + ' не найден'));
-                    }
-                }
-            });
-    }
+    var company = client.from('company')
+      .filter('contact.phones', phoneNumber)
+      .first(function (err, company) {
+        if (err) {
+          return cb(new Error('Ошибка запроса к серверу МойСклад'));
+        }
+
+        if (company) {
+          cb(null, {
+            'company': {
+              'id': company.uuid,
+              'url': getCompanyUrl(company.uuid),
+              'title': company.name,
+              'email': company.contact ? company.contact.email : null
+            }
+          })
+        } else {
+          cb(new Error('Контрагент по номеру ' + data.phone + ' не найден'));
+        }
+      });
+  }
 };
-
-module.exports = contactInfo;

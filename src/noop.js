@@ -4,8 +4,6 @@
  * Vitaliy V. Makeev (w.makeev@gmail.com)
  */
 
-var noop = function (data, cb) {
-    cb(new Error('Метод не реализован'));
+module.exports = function noop(data, cb) {
+  cb(new Error('Метод не реализован'));
 };
-
-module.exports = noop;

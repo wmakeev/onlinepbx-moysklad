@@ -4,6 +4,6 @@
  * Vitaliy V. Makeev (w.makeev@gmail.com)
  */
 
-module.exports = function (data, cb) {
-    cb(null, { status: '1' });
+module.exports = function test (data, cb) {
+  cb(null, { status: '1' });
 };
