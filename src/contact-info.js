@@ -22,7 +22,7 @@ module.exports = function contactInfo (data, cb) {
     // +7 (922) 622-77-55
     var phoneNumber = phoneParser(phoneE164, '+x (xxx) xxx-xx-xx');
 
-    var company = client.from('company')
+    client.from('company')
       .filter('contact.phones', phoneNumber)
       .first(function (err, company) {
         if (err) {
@@ -31,12 +31,18 @@ module.exports = function contactInfo (data, cb) {
 
         if (company) {
           cb(null, {
-            'company': {
+            'contact': {
               'id': company.uuid,
               'url': getCompanyUrl(company.uuid),
-              'title': company.name,
+              'name': company.name,
               'email': company.contact ? company.contact.email : null
             }
+            //'company': {
+            //  'id': company.uuid,
+            //  'url': getCompanyUrl(company.uuid),
+            //  'title': company.name,
+            //  'email': company.contact ? company.contact.email : null
+            //}
           })
         } else {
           cb(new Error('Контрагент по номеру ' + data.phone + ' не найден'));
