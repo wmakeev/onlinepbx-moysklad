@@ -1,0 +1,313 @@
+{
+  "context": {
+    "employee": {
+      "meta": {
+        "href": "https://online.moysklad.ru/api/remap/1.1/context/employee",
+        "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/employee/metadata",
+        "type": "employee",
+        "mediaType": "application/json"
+      }
+    }
+  },
+  "meta": {
+    "href": "http://online.moysklad.ru/api/remap/1.1/entity/counterparty?search=922%20609%2007-05&expand=contactpersons",
+    "metadataHref": "http://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata",
+    "type": "counterparty",
+    "mediaType": "application/json",
+    "size": 1,
+    "limit": 25,
+    "offset": 0
+  },
+  "rows": [
+    {
+      "meta": {
+        "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/d04f8c38-a83f-4117-9802-e420dc53105a?expand=contactpersons",
+        "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata",
+        "type": "counterparty",
+        "mediaType": "application/json"
+      },
+      "id": "d04f8c38-a83f-4117-9802-e420dc53105a",
+      "accountId": "47896027-0e7b-11e2-c959-3c4a92f3a0a7",
+      "shared": true,
+      "group": {
+        "meta": {
+          "href": "https://online.moysklad.ru/api/remap/1.1/entity/group/07a74747-d269-11e4-90a2-8ecb00041136",
+          "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/group/metadata",
+          "type": "group",
+          "mediaType": "application/json"
+        }
+      },
+      "version": 66,
+      "updated": "2016-10-16 19:05:35",
+      "name": "Макеев Виталий Вячеславович (ФЛ)",
+      "code": "4",
+      "externalCode": "R1UMzpX_jEavGvIXwubxm2",
+      "archived": false,
+      "companyType": "individual",
+      "legalTitle": "Макеев Виталий Вячеславович",
+      "legalAddress": "Город N",
+      "actualAddress": "г.Екатеринбруг, ул.Баумана, д.30, кв.4",
+      "email": "mvv@vensi.me",
+      "phone": "+7 (922) 609-07-05",
+      "attributes": [
+        {
+          "meta": {
+            "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata/attributes/d55c5a62-6c2a-468c-b88c-b820a17c3a99",
+            "type": "attributemetadata",
+            "mediaType": "application/json"
+          },
+          "id": "d55c5a62-6c2a-468c-b88c-b820a17c3a99",
+          "name": "Обращение",
+          "type": "string",
+          "value": "Виталий"
+        },
+        {
+          "meta": {
+            "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata/attributes/baae83d3-a6f8-4a2d-b1e8-1b29557dda51",
+            "type": "attributemetadata",
+            "mediaType": "application/json"
+          },
+          "id": "baae83d3-a6f8-4a2d-b1e8-1b29557dda51",
+          "name": "Вид контрагента",
+          "type": "customentity",
+          "value": {
+            "meta": {
+              "href": "https://online.moysklad.ru/api/remap/1.1/entity/customentity/d04bbb95-d6e4-4da6-b9af-8e7b9e4f1552/55b375ba-7d6c-4405-b3e3-7a8252f08039",
+              "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/companysettings/metadata/customEntities/d04bbb95-d6e4-4da6-b9af-8e7b9e4f1552",
+              "type": "customentity",
+              "mediaType": "application/json"
+            },
+            "name": "Сотрудник"
+          }
+        },
+        {
+          "meta": {
+            "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata/attributes/14fb58fc-5496-4f78-a2e4-8de00ebe72f9",
+            "type": "attributemetadata",
+            "mediaType": "application/json"
+          },
+          "id": "14fb58fc-5496-4f78-a2e4-8de00ebe72f9",
+          "name": "Тип клиента",
+          "type": "customentity",
+          "value": {
+            "meta": {
+              "href": "https://online.moysklad.ru/api/remap/1.1/entity/customentity/280fea54-11d0-44e8-9a38-0cdc20c90c74/79b18b1b-2f47-4204-88b9-1026c904ee36",
+              "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/companysettings/metadata/customEntities/280fea54-11d0-44e8-9a38-0cdc20c90c74",
+              "type": "customentity",
+              "mediaType": "application/json"
+            },
+            "name": "Организатор СП"
+          }
+        },
+        {
+          "meta": {
+            "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata/attributes/79cd7437-d652-11e3-e2cd-002590a28eca",
+            "type": "attributemetadata",
+            "mediaType": "application/json"
+          },
+          "id": "79cd7437-d652-11e3-e2cd-002590a28eca",
+          "name": "Способ оплаты",
+          "type": "customentity",
+          "value": {
+            "meta": {
+              "href": "https://online.moysklad.ru/api/remap/1.1/entity/customentity/51191ae0-d652-11e3-201a-002590a28eca/6021a541-d653-11e3-ea29-002590a28eca",
+              "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/companysettings/metadata/customEntities/51191ae0-d652-11e3-201a-002590a28eca",
+              "type": "customentity",
+              "mediaType": "application/json"
+            },
+            "name": "Карточный счет"
+          }
+        },
+        {
+          "meta": {
+            "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata/attributes/86a71298-69c3-4f41-be64-100d4a24bc3a",
+            "type": "attributemetadata",
+            "mediaType": "application/json"
+          },
+          "id": "86a71298-69c3-4f41-be64-100d4a24bc3a",
+          "name": "Город назначения",
+          "type": "customentity",
+          "value": {
+            "meta": {
+              "href": "https://online.moysklad.ru/api/remap/1.1/entity/customentity/a8dfe5f1-1c6c-472c-b64d-829d65750bdd/3d72d741-ea17-4df0-9cb5-4228f5f4e2a1",
+              "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/companysettings/metadata/customEntities/a8dfe5f1-1c6c-472c-b64d-829d65750bdd",
+              "type": "customentity",
+              "mediaType": "application/json"
+            },
+            "name": "Екатеринбург"
+          }
+        },
+        {
+          "meta": {
+            "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata/attributes/44388f06-47b9-4151-ad50-67f3831afc0e",
+            "type": "attributemetadata",
+            "mediaType": "application/json"
+          },
+          "id": "44388f06-47b9-4151-ad50-67f3831afc0e",
+          "name": "Способ доставки",
+          "type": "customentity",
+          "value": {
+            "meta": {
+              "href": "https://online.moysklad.ru/api/remap/1.1/entity/customentity/ae3b3929-6450-47fb-a2b3-b1ab7923eab1/424646b6-aa72-443e-8e81-16fb50f8a678",
+              "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/companysettings/metadata/customEntities/ae3b3929-6450-47fb-a2b3-b1ab7923eab1",
+              "type": "customentity",
+              "mediaType": "application/json"
+            },
+            "name": "Самовывоз"
+          }
+        },
+        {
+          "meta": {
+            "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata/attributes/7f950623-6211-4f89-b492-b539a99c2e5c",
+            "type": "attributemetadata",
+            "mediaType": "application/json"
+          },
+          "id": "7f950623-6211-4f89-b492-b539a99c2e5c",
+          "name": "Рассылка",
+          "type": "customentity",
+          "value": {
+            "meta": {
+              "href": "https://online.moysklad.ru/api/remap/1.1/entity/customentity/c2060f96-7407-479b-81e7-62054c9f571c/e8807c0a-564e-4c33-80d9-1aa467a8e604",
+              "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/companysettings/metadata/customEntities/c2060f96-7407-479b-81e7-62054c9f571c",
+              "type": "customentity",
+              "mediaType": "application/json"
+            },
+            "name": "Всегда уведомлять"
+          }
+        },
+        {
+          "meta": {
+            "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata/attributes/12d147d7-80ea-4b76-a9b4-d64e7f3498e2",
+            "type": "attributemetadata",
+            "mediaType": "application/json"
+          },
+          "id": "12d147d7-80ea-4b76-a9b4-d64e7f3498e2",
+          "name": "Доступ на сайт",
+          "type": "customentity",
+          "value": {
+            "meta": {
+              "href": "https://online.moysklad.ru/api/remap/1.1/entity/customentity/7c713956-4205-4dbf-be58-b604fa78c548/a45d079f-d732-468d-8efd-92256e281d01",
+              "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/companysettings/metadata/customEntities/7c713956-4205-4dbf-be58-b604fa78c548",
+              "type": "customentity",
+              "mediaType": "application/json"
+            },
+            "name": "Оптовый клиент"
+          }
+        },
+        {
+          "meta": {
+            "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata/attributes/09e3807c-4d5e-4f0e-90b0-4e71e2627448",
+            "type": "attributemetadata",
+            "mediaType": "application/json"
+          },
+          "id": "09e3807c-4d5e-4f0e-90b0-4e71e2627448",
+          "name": "Логин",
+          "type": "string",
+          "value": "user03"
+        },
+        {
+          "meta": {
+            "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata/attributes/dfeb0a31-863b-4654-8898-fdbb8bec3c34",
+            "type": "attributemetadata",
+            "mediaType": "application/json"
+          },
+          "id": "dfeb0a31-863b-4654-8898-fdbb8bec3c34",
+          "name": "Пароль",
+          "type": "string",
+          "value": "user033"
+        },
+        {
+          "meta": {
+            "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata/attributes/1d1c4405-5f90-4d46-858d-6e6cef436233",
+            "type": "attributemetadata",
+            "mediaType": "application/json"
+          },
+          "id": "1d1c4405-5f90-4d46-858d-6e6cef436233",
+          "name": "Срок резерва",
+          "type": "long",
+          "value": 0
+        },
+        {
+          "meta": {
+            "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata/attributes/6264e9b5-52df-4302-8592-eb246f28918c",
+            "type": "attributemetadata",
+            "mediaType": "application/json"
+          },
+          "id": "6264e9b5-52df-4302-8592-eb246f28918c",
+          "name": "Пометка на удаление",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "accounts": {
+        "meta": {
+          "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/d04f8c38-a83f-4117-9802-e420dc53105a/accounts",
+          "type": "account",
+          "mediaType": "application/json",
+          "size": 2,
+          "limit": 100,
+          "offset": 0
+        }
+      },
+      "tags": [],
+      "discounts": [
+        {
+          "discount": {
+            "meta": {
+              "href": "https://online.moysklad.ru/api/remap/1.1/entity/accumulationdiscount/2908eebe-a436-11e5-840b-0cc47a342c9a",
+              "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/accumulationdiscount/metadata",
+              "type": "accumulationdiscount",
+              "mediaType": "application/json"
+            }
+          },
+          "demandSumCorrection": -132000
+        },
+        {
+          "discount": {
+            "meta": {
+              "href": "https://online.moysklad.ru/api/remap/1.1/entity/personaldiscount/291b0342-a436-11e5-840b-0cc47a342c9a",
+              "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/personaldiscount/metadata",
+              "type": "personaldiscount",
+              "mediaType": "application/json"
+            }
+          },
+          "personalDiscount": 1
+        }
+      ],
+      "contactpersons": {
+        "meta": {
+          "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/d04f8c38-a83f-4117-9802-e420dc53105a/contactpersons",
+          "type": "contactperson",
+          "mediaType": "application/json",
+          "size": 1,
+          "limit": 100,
+          "offset": 0
+        },
+        "rows": [
+          {
+            "meta": {
+              "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/d04f8c38-a83f-4117-9802-e420dc53105a/contactpersons/4e36970d-1f92-4b76-8ab2-f995d029f729",
+              "type": "contactperson",
+              "mediaType": "application/json"
+            },
+            "id": "4e36970d-1f92-4b76-8ab2-f995d029f729",
+            "accountId": "47896027-0e7b-11e2-c959-3c4a92f3a0a7",
+            "version": 26,
+            "updated": "2015-07-28 10:28:20",
+            "name": "Виталий",
+            "externalCode": "D_fRmKB0i663g9OHQzWBC3",
+            "phone": "+7 (343) 352-17-82, 100",
+            "agent": {
+              "meta": {
+                "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/d04f8c38-a83f-4117-9802-e420dc53105a",
+                "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata",
+                "type": "counterparty",
+                "mediaType": "application/json"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

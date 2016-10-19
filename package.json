@@ -1,12 +1,15 @@
 {
   "name": "onlinepbx-moysklad",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "author": {
     "name": "Vitaliy Makeev",
     "email": "w.makeev@gmail.com",
     "url": "https://github.com/wmakeev"
   },
   "description": "Модуль для CRM-адаптера к OnlinePBX",
+  "scripts": {
+    "test": "blue-tape ./src/**/__tests__/*.test.js | tap-spec"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wmakeev/onlinepbx-moysklad.git"
@@ -20,10 +23,16 @@
   ],
   "dependencies": {
     "google-libphonenumber": "^1.0.15",
-    "moysklad-client": "^0.2.3",
-    "phone-parser": "0.0.2"
+    "node-fetch": "^1.6.3",
+    "phone-parser": "0.0.2",
+    "scaleflow": "github:wmakeev/scaleflow#1233b5b1c339c2611cc47696ad53922f1a910ca1"
   },
   "devDependencies": {
-    "chai": "^1.9.1"
+    "blue-tape": "^1.0.0",
+    "co": "^4.6.0",
+    "nock": "^8.1.0",
+    "sinon": "^1.17.6",
+    "tap-spec": "^4.1.1",
+    "walkdir": "0.0.11"
   }
 }
